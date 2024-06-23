@@ -51,7 +51,23 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ### What I learned
 
-The difference between article, section, and div. To start with, what they all have in common is that they are used to group content together. An article has roots in newspaper articles, which are long-form peices of text that focus on a specific topic. These topics can range from product review to blog posts or tutorials. Typically, articles on the web occupy an entire web page and can be a A "div" element is a generic container. A section is a part (section) of an article, as articles are typically divided into sections. For example, if we have a article on Heshey's chocolate bar, a section of that article may be about the taste another section may be the manufactering process or the nutritional breakdown. Explained another way, a `<section></section>` is a group of related content that requires the context of the site to make sense. An `<article></article>` must be a group of related content and it's content must be stand alone, meaning its purpose should make sense on any site the content is on. For example, a job post is a group of related content and if posted on Indeed.com or Facebook or on a blog site, it will make sense regardless of the different sites.
+-   The difference between article, section, and div. To start with, what they all have in common is that they are used to group content. An article has roots in newspaper articles, which are long-form peices of text that focus on a specific topic. These topics can range from product review to blog posts or tutorials. An `<article></article>` must be a group of related content and it's content must be stand alone/self-contained, meaning you could transplant that content onto any other site and it's purpose should make sense. For example, a job post is a group of related content and if posted on Indeed.com or Facebook or on a blog site, it will make sense regardless of the purpose of those sites. A section defines sections within a document ie. chapters, headers, footers, or other logical divisions; typically, articles are divided into sections. For example, if we have a review of a Heshey's chocolate bar, it may be of: the topics that will be covered and on which page, a write up of the comparison between it and other chocolate bars on the market, the manufactering process, or the nutritional breakdown. Explained another way, a `<section></section>` is a group of related content that requires the context of the site to make sense. A div element is a generic container.
+
+-   Grid template areas. I found an alternative way to implement the grid layout needed for this challenge:
+
+```CSS
+    main {
+        display: grid;
+        grid-template-areas:
+        'daniel'
+        'jonathan'
+        'kira'
+        'jeanette'
+        'patrick';
+    }
+
+
+```
 
 ### Continued development
 
