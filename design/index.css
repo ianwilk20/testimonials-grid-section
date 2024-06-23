@@ -52,24 +52,24 @@ body {
             'jeanette patrick patrick kira';
     }
 
-    main:nth-child(1) {
-        grid-area: 'daniel';
+    main article:nth-child(1) {
+        grid-area: daniel;
     }
 
-    main:nth-child(2) {
-        grid-area: 'jonathan';
+    main article:nth-child(2) {
+        grid-area: jonathan;
     }
 
-    main:nth-child(3) {
-        grid-area: 'jeanette';
+    main article:nth-child(3) {
+        grid-area: jeanette;
     }
 
-    main:nth-child(4) {
-        grid-area: 'patrick';
+    main article:nth-child(4) {
+        grid-area: patrick;
     }
 
-    main:nth-child(5) {
-        grid-area: 'kira';
+    main article:nth-child(5) {
+        grid-area: kira;
     }
 
     /* main > article:last-of-type {
