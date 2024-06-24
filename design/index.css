@@ -24,6 +24,7 @@
 }
 
 body {
+    min-height: 100vh;
     margin: 0;
     padding: 0;
     background: var(--light-grayish-blue);
@@ -34,6 +35,10 @@ body {
         display: flex;
         flex-direction: column;
         padding: 2rem;
+    }
+
+    .attribution {
+        margin: 1rem;
     }
 }
 
@@ -46,38 +51,24 @@ body {
 @media screen and (width > 950px) {
     main {
         display: grid;
-        /* grid-template-columns: repeat(4, 1fr); */
-        grid-template-areas:
-            'daniel daniel jonathan kira'
-            'jeanette patrick patrick kira';
+        grid-template-columns: repeat(4, 1fr);
     }
 
-    main article:nth-child(1) {
-        grid-area: daniel;
-    }
-
-    main article:nth-child(2) {
-        grid-area: jonathan;
-    }
-
-    main article:nth-child(3) {
-        grid-area: jeanette;
-    }
-
-    main article:nth-child(4) {
-        grid-area: patrick;
-    }
-
-    main article:nth-child(5) {
-        grid-area: kira;
-    }
-
-    /* main > article:last-of-type {
+    main > article:last-of-type {
         grid-row-start: 1;
         grid-row-end: 3;
         grid-column-start: 4;
         grid-column-end: 5;
-    } */
+    }
+
+    body {
+        display: grid;
+        grid-template-rows: 1fr auto;
+    }
+
+    .attribution {
+        min-height: 2rem;
+    }
 }
 
 @media screen and (1100px < width < 1600px) {
@@ -208,7 +199,6 @@ article:first-of-type > .card-body {
 .attribution {
     font-size: 0.85rem;
     text-align: center;
-    margin: 1rem;
 }
 .attribution a {
     color: hsl(228, 45%, 44%);
